@@ -1,0 +1,31 @@
+
+
+1.cypress/support/commands.js Nedir?
+
+Bu dosya, özel Cypress komutlarini tanimladiğiniz yerdir. 
+Cypress'in varsayilan komutlarini genişletmek veya projeye özel tekrar kullanilabilir komutlar oluşturmak için kullanilir. 
+Örneğin, bir giriş (login) işlemi ya da form doldurma işlemi gibi tekrar eden kodlari tek bir komut haline getirmek için kullanilir.
+
+
+
+2.Ne İşe Yarar? 
+
+Tekrar eden işlemleri basitleştirir ve testlerinizi daha modüler hale getirir. 
+Örneğin, ayni giriş işlemini farkli testlerde kullanmak yerine, bunu bir komut olarak tanimlayabilir ve 
+her seferinde cy.login() gibi bir komutla çağirabilirsiniz.
+
+İçerik Örnek:
+javascript
+
+Cypress.Commands.add('login', (username, password) => { 
+  cy.visit('/login')
+
+  cy.get('input[name="username"]').type(username)
+
+  cy.get('input[name="password"]').type(password)
+
+  cy.get('button[type="submit"]').click()
+})
+
+Bu örnekte, bir login komutu tanimlanmiş. Herhangi bir test dosyasinda 
+cy.login('kullaniciAdi', 'şifre') komutuyla bu işlemi gerçekleştirebilirsiniz.
