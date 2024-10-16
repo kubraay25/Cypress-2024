@@ -1,0 +1,25 @@
+
+
+1. cypress/fixtures/example.json Nedir?
+
+fixtures klasörü, testlerde kullanılan sabit veri dosyalarını saklamak için kullanılır. example.json gibi JSON dosyaları, testlerde ihtiyaç duyduğunuz örnek veri setlerini veya mock (sahte) verileri içerir.
+Ne İşe Yarar?
+Testlerinizi gerçek veri yerine sahte veri ile çalıştırmak için kullanılır. Özellikle API testlerinde ya da form doğrulamalarında, testlerinizi çeşitli veri kombinasyonları ile çalıştırmak istediğinizde bu dosyalar oldukça yararlı olabilir. Örneğin, bir kullanıcının bilgilerini içeren bir JSON dosyası ile farklı kullanıcıların sisteme nasıl giriş yaptığını test edebilirsiniz.
+İçerik Örnek:
+json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "age": 30
+}
+Bu örnekte, example.json dosyası içinde bir kullanıcının bilgileri yer alıyor. Testlerinizde bu verileri kullanarak çeşitli senaryoları test edebilirsiniz.
+
+Kullanım Örneği:
+javascript
+
+cy.fixture('example.json').then((data) => {
+  cy.get('input[name="name"]').type(data.name)
+  cy.get('input[name="email"]').type(data.email)
+})
+Bu kodda, example.json dosyasındaki veriler fixture kullanılarak çekiliyor ve ardından form alanlarına yerleştiriliyor.
