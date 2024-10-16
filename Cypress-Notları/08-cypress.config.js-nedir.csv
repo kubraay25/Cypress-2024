@@ -1,0 +1,30 @@
+
+
+1. cypress.config.js Nedir?
+
+cypress.config.js, Cypress'in temel yapilandirma dosyasidir. 
+Cypress testlerini nasil çaliştiracağinizi ve ayarlarini bu dosyada tanimlarsiniz. 
+Bu dosya, testlerin nasil çalişacağini kontrol eden ayarlari içerir.
+
+
+
+
+2.Ne İşe Yarar? 
+
+Cypress'in çalişma ortamini ve davranişini yapilandirmak için kullanilir. 
+Testlerin hangi tarayicida, hangi ortamda çalişacağini belirleyebilir, zaman aşimlari (timeouts), 
+base URL, viewport (görünüm) boyutlari ve benzeri ayarlari yapabilirsiniz.
+
+İçerik Örnek:
+javascript
+Kodu kopyala
+module.exports = {
+  e2e: {
+    baseUrl: 'http://localhost:3000',
+    defaultCommandTimeout: 10000, // Komutlarin zaman aşimi süresi
+    viewportWidth: 1280,  // Tarayicinin genişliği
+    viewportHeight: 720   // Tarayicinin yüksekliği
+  }
+}
+Bu örnekte, Cypress testlerinin localhost:3000 üzerinde çalişacağini, 
+komutlarin 10 saniye zaman aşimina sahip olacağini ve tarayici penceresinin boyutlarini ayarladiğini görebiliriz.

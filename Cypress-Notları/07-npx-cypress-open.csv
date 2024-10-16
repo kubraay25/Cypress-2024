@@ -1,0 +1,7 @@
+
+
+npx cypress open komutu, 
+
+
+Cypress test aracini başlatmak ve Cypress test arayüzünü açmak için kullanilir. 
+Bu komut, projenizde Cypress kuruluysa doğrudan testlerinizi çaliştirmaniza ve yönetmenize olanak tanir.

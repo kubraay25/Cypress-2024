@@ -1,0 +1,28 @@
+
+
+1. cypress/support/e2e.js Nedir? i
+
+Bu dosya, global ayarlamalarin ve başlatma işlemlerinin yapildiği dosyadir. 
+Cypress, herhangi bir test dosyasini çaliştirmadan önce bu dosyayi yükler. 
+Cypress 10 sürümü ile birlikte, e2e testler için global destek dosyasi olarak tanitilmiştir.
+
+
+
+2.Ne İşe Yarar?
+
+Tüm testler başlamadan önce çalişacak olan işlemleri buraya yazabilirsiniz. 
+Örneğin, global komutlari veya önceden tanimlanmiş ayarlari buraya ekleyebilirsiniz. 
+Ayrica, testler sirasinda çaliştirilmasi gereken başlangiç konfigürasyonlarini da burada ayarlayabilirsiniz.
+
+İçerik Örnek:
+
+javascript
+import './commands'
+
+// Global bir hata yakalama örneği:
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // Testleri kesintiye uğratmadan hatalari yoksaymak için
+  return false
+})
+
+Bu örnekte, commands.js dosyasi dahil ediliyor ve global olarak testlerde yakalanmamiş hatalar yoksayiliyor.
