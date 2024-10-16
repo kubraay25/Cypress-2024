@@ -1,4 +1,14 @@
 
 CYPRESS İÇİN GEREKLİ KURULUMLAR
 
--->
+1--> Node.js in LTS sürümü indirilmektedir (en çok kullanılan bu olduğu için)
+
+2--> GIT BASH komutları yönetmek için kullanacağımız terminal araçtır,
+git kurulumu ilr birlikte gelir
+
+3--> VS CODE test projemizi oluşturup yönetmek için kullanacağımız IDE dir
+
+4--> VS Code terminali açılır
+terminalde npm init yazılır
+npm install cypress --save-dev yazılır ve onaylanır
+npx cypress open yazılır ve onaylanır
