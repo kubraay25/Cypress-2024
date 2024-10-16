@@ -1,0 +1,20 @@
+Cypress Nedir?
+--> Javascript tabanli bir test aracidir
+--> Web uygulamalarinin test edilmesi için kullanilir
+--> Node.js platformnda çalişir
+--> Test senaryolari koşulabilir ve hata ayiklamasi yapilabilir
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
+açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
+JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir
+
+Web tabanli uygulama nedir?
+--> Web uygulamasi, internet üzerinden bir tarayici araciliğiyla erişilebilen ve 
+kullanicinin etkileşimde bulunduğu bir yazilim uygulamasidir. Geleneksel masaüstü uygulamalarinin aksine, 
+web uygulamalari yüklemeye gerek kalmadan doğrudan web tarayicisi üzerinden çalişir ve 
+genellikle bir sunucuya bağli olarak dinamik içerik sunar.
+
+Node.js nedir?
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
+açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
+JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir.
+
