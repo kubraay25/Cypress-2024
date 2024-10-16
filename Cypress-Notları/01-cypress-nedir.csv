@@ -1,0 +1,32 @@
+Cypress Nedir?
+--> Javascript tabanli bir test aracidir sadece javasicript kullanilir
+--> Uçtan uca test (E2E Test) odaklidir
+--> Web uygulamalarinin test edilmesi için kullanilir
+--> Node.js platformnda çalişir
+--> Test senaryolari koşulabilir ve hata ayiklamasi yapilabilir
+--> Framework kurmak için manuel olarak paket indirmenize gerek yoktur
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
+açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
+JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir
+
+Web tabanli uygulama nedir?
+--> Web uygulamasi, internet üzerinden bir tarayici araciliğiyla erişilebilen ve 
+kullanicinin etkileşimde bulunduğu bir yazilim uygulamasidir. Geleneksel masaüstü uygulamalarinin aksine, 
+web uygulamalari yüklemeye gerek kalmadan doğrudan web tarayicisi üzerinden çalişir ve 
+genellikle bir sunucuya bağli olarak dinamik içerik sunar.
+
+Node.js nedir?
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
+açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
+JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir.
+--> Node.js sayesinde testlerimiz çok hizli çalişir
+--> Node.js bir kütüphanedir ve buradaki kütüphaneleri uygulamalarimiza kolaylikla enjekte edebiliyoruz
+--> Node.js, devasa bir paket yönetim sistemi olan npm ile birlikte gelir. NPM, 
+geliştiricilerin projelerinde kolayca kullanabilecekleri binlerce kütüphaneye ve modüle erişim sağlar.
+
+Cypress'in Eksileri
+--> Mobil otomasyonu desteklenmez
+--> Iframe ile iyi anlaşamaz
+--> Tek URL ve tek sekme kullanilir
+
+
