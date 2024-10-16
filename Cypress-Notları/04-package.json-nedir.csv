@@ -1,0 +1,84 @@
+PACKAGE.JSON DOSYASI EN ISE YARAR
+
+-->`package.json`, JavaScript tabanli projelerde (özellikle Node.js uygulamalarinda) kullanilan bir dosyadir ve 
+projenizin yapilandirma bilgilerini, bağimliliklarini ve diğer önemli verilerini içerir. 
+
+ 1.--> Nedir?:
+ `package.json`, JSON formatinda yazilmiş bir dosyadir ve projenizin kök dizininde bulunur. 
+ Projeyi yöneten ve yapilandiran temel bilgiler içerir.
+ Seleniumda ki pom.exe gibidir
+
+ 2.--> Ne İşe Yarar?
+Proje Bilgileri: Projenizin adi, versiyonu, açiklamasi, yazar bilgileri gibi temel bilgileri içerir.
+
+Bağimliliklar: Projeye dahil edilen kütüphaneler ve modüller hakkinda bilgi verir. 
+Bu kütüphaneler `dependencies` ve `devDependencies` alanlarinda belirtilir.
+
+Scripting: Proje için özel komutlar tanimlamaniza olanak tanir. 
+Örneğin, test, geliştirme sunucusu başlatma gibi işlemler için `scripts` bölümünde tanimlamalar yapabilirsiniz.
+
+Versiyon Yönetimi: Projenizin sürümünü belirleyerek, belirli bir sürüm üzerinde çalişmaniza olanak tanir.
+
+ 3.--> Neler Yapabilirim?
+ 
+Proje Bilgilerini Tanimlamak: `name`, `version`, `description`, `author`, 
+`license` gibi alanlari doldurarak projenizi tanimlayabilirsiniz.
+
+Bağimliliklari Yönetmek:
+  - Yeni bir bağimlilik eklemek için terminalde `npm install <paket-adi>` komutunu kullanabilirsiniz. 
+  Bu, `package.json` dosyanizin `dependencies` veya `devDependencies` kismina otomatik olarak eklenir.
+  - Örneğin:
+    ```bash
+    npm install express
+    ```
+
+Script Tanimlamak: `scripts` bölümünde komutlar tanimlayarak, 
+belirli görevleri kolayca çaliştirabilirsiniz. Örneğin:
+    ```json
+    "scripts": {
+      "start": "node app.js",
+      "test": "jest"
+    }
+    ```
+  - Bu tanimlamalarla terminalde `npm start` veya `npm test` komutlariyla ilgili script'leri çaliştirabilirsiniz.
+
+Bağimliliklari Güncellemek: Mevcut bağimliliklari güncelleyebilir ve sürüm kontrolü yapabilirsiniz. 
+Örneğin, belirli bir paketi güncellemek için:
+    ```bash
+    npm update <paket-adi>
+    ```
+
+ 4.--> Neden Yükleriz? Amaci Nedir?
+ 
+Projenin Yönetimini Kolaylaştirmak: Projenizdeki bağimliliklari ve yapilandirmalari merkezi bir dosyada toplamak, 
+yönetimi kolaylaştirir.
+
+Ekip Çalişmasi: Projeye katkida bulunan diğer geliştiricilerin bağimliliklari kolayca yüklemelerini sağlar. 
+Projeyi klonladiktan sonra `npm install` komutunu çaliştirarak `package.json` dosyasindaki tüm bağimliliklari yükleyebilirler.
+ 
+Sürüm Kontrolü: Projenin sürümünü ve bağimliliklarinin sürümlerini kontrol ederek, 
+uyumlu bir çalişma ortami sağlar.
+
+ Örnek `package.json` Dosyasi:
+```json
+{
+  "name": "my-awesome-project",
+  "version": "1.0.0",
+  "description": "A simple project to demonstrate package.json",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0"
+  },
+  "author": "Kübra Aydoğdu",
+  "license": "MIT"
+}
+```
+
+Bu bilgiler, `package.json` dosyasinin projelerdeki rolünü ve nasil kullanilacağini anlamaniza yardimci olacaktir. 
