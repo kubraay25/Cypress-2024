@@ -3,6 +3,7 @@ Cypress Nedir?
 --> Web uygulamalarinin test edilmesi için kullanilir
 --> Node.js platformnda çalişir
 --> Test senaryolari koşulabilir ve hata ayiklamasi yapilabilir
+--> Framework kurmak için manuel olarak paket indirmenize gerek yoktur
 --> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
 açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
 JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir
@@ -17,4 +18,64 @@ Node.js nedir?
 --> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
 açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
 JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir.
+--> Node.js sayesinde testlerimiz çok hizli çalişir
+--> Node.js bir kütüphanedir ve buradaki kütüphaneleri uygulamalarimiza kolaylikla enjekte edebiliyoruz
+--> Node.js, devasa bir paket yönetim sistemi olan npm ile birlikte gelir. NPM, 
+geliştiricilerin projelerinde kolayca kullanabilecekleri binlerce kütüphaneye ve modüle erişim sağlar.
+
+Cypress ve Selenium Farki
+-->Cypress hata ayiklama süreçlerini kolaylaştirir, seleniumda bir testi çaliştirirsiniz browser açilir sonrasinda
+kapanir, terminalde ne görürsek o test geçti veya kaldi o, seleniumda bir hata alirsak bununla alakali sadece exeptionlar aliriz
+ama cypress te hata nerde gerçekleşti neden geçmedi nerde geçmedi tüm bunlarin cevaplarini aliriz ama seleniumda
+bunu kodlarla raporlamamiz gerekir, cypresste raporu kendisi oluşturuyor zaten
+-->Cypress otomatik bekleme özelliği sağlar, seleniumda beklemek içib bekleme komutu yazmamiz gerekir
+Cypress ve Selenium, web uygulamalarini test etmek için yaygin olarak kullanilan iki araçtir. Ancak, aralarinda bazi önemli farklar vardir:
+ 1. Mimari ve Çalişma Şekli
+   - Cypress: Tarayicida doğrudan çalişir ve JavaScript ile yazilmiştir. 
+   Tarayici üzerinde gerçek zamanli bir test ortami sağlar. Bu, daha hizli ve 
+   daha etkileşimli test senaryolari oluşturmayi mümkün kilar.
+   - Selenium: WebDriver protokolü kullanarak tarayicilarla etkileşim kurar. 
+   Farkli programlama dillerinde (Java, Python, C#, vb.) kullanilabilir ve tarayicilar arasinda 
+   daha geniş bir uyumluluk sunar.
+
+ 2. Hiz
+   - Cypress: Testleri hizli bir şekilde çaliştirabilir çünkü doğrudan tarayici içinde çalişir 
+   ve gerçek zamanli bir test deneyimi sunar.
+   - Selenium: Tarayici ile iletişim kurarken daha fazla zaman alabilir, 
+   çünkü test komutlarini işlemek için bir WebDriver kullanir.
+
+ 3. Kurulum ve Kullanim Kolayliği
+   - Cypress: Kurulumu oldukça basittir ve genellikle tek bir npm komutu ile başlayabilir. 
+   Kullanici dostu bir arayüze sahiptir.
+   - Selenium: Daha karmaşik bir kurulum süreci olabilir, 
+   çünkü çeşitli WebDriver bileşenlerinin yüklenmesi gerekebilir.
+
+ 4. Test Senaryolarinin Yazimi
+   - Cypress: Test senaryolari genellikle daha az karmaşiktir ve kullanici etkileşimlerini simüle etmek için 
+   daha kolay bir sözdizimine sahiptir.
+   - Selenium: Daha fazla esneklik sunar, ancak bazen daha karmaşik senaryolar yazmak gerekebilir.
+
+ 5. Etkileşim ve Eşzamanlilik
+   - Cypress: Testlerin eşzamanli olarak çaliştirilmasini destekler ve 
+   DOM'da gerçekleşen değişiklikleri aninda yakalayabilir.
+   - Selenium: Testlerin eşzamanli çaliştirilmasi desteklenmez ve daha çok sirayla çalişir.
+
+ 6. Otomasyon Desteği
+   - Cypress: Sadece JavaScript tabanli uygulamalar için tasarlanmiştir 
+   ve öncelikle ön yüz (frontend) testleri için kullanilir.
+   - Selenium: Hem ön yüz hem de arka yüz (backend) testlerini destekler, 
+   bu nedenle daha geniş bir test yelpazesi sunar.
+
+ 7. Raporlama ve Debugging
+   - Cypress: Hata ayiklama (debugging) ve raporlama konusunda daha iyi bir kullanici deneyimi sunar. 
+   Gerçek zamanli olarak ekran görüntüleri ve video kayitlari alabilir.
+   - Selenium: Hata ayiklama yetenekleri vardir, ancak genellikle daha karmaşik ve daha fazla ayar gerektirebilir.
+
+ 8. Topluluk ve Destek
+   - Cypress: Yeni bir araç olduğu için topluluğu sürekli büyümekte, ama kaynaklar biraz daha sinirlidir.
+   - Selenium: Uzun yillardir kullanilan bir araçtir, bu nedenle geniş bir topluluk ve birçok kaynak mevcuttur.
+
+Bu farklar, hangi aracin projeniz için daha uygun olduğunu belirlemenize yardimci olabilir. 
+İhtiyaçlariniza göre seçim yapabilirsiniz!
+
 
