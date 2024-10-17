@@ -1,28 +1,28 @@
 /*
-Cypress, Mocha adlı bir test framework'ü üzerine kuruludur ve bu framework'ün temel yapı taşları 
-olan describe ve it bloklarını kullanır.
+Cypress, Mocha adli bir test framework'ü üzerine kuruludur ve bu framework'ün temel yapi taşlari 
+olan describe ve it bloklarini kullanir.
 
 describe Bloğu
-Amacı: Test senaryolarınızı gruplamak için kullanılır. 
-Genellikle bir test grubunu (veya bir modülü) tanımlar ve içerisine birden fazla it bloğu ekleyerek, 
-o gruba ait testleri tanımlarsınız.
+Amaci: Test senaryolarinizi gruplamak için kullanilir. 
+Genellikle bir test grubunu (veya bir modülü) tanimlar ve içerisine birden fazla it bloğu ekleyerek, 
+o gruba ait testleri tanimlarsiniz.
 
-Kullanımı: describe içine bir başlık ve bir fonksiyon alır. 
-Başlık, test grubunun neyi test ettiğini ifade ederken, fonksiyon içinde o grup altındaki testler yer alır.
+Kullanimi: describe içine bir başlik ve bir fonksiyon alir. 
+Başlik, test grubunun neyi test ettiğini ifade ederken, fonksiyon içinde o grup altindaki testler yer alir.
 
 describe("Login Modülü", () => {
   // Burada login ile ilgili tüm testler olacak
-});
+}); i
 
 
 it Bloğu
-Amacı: it bloğu, tek bir test durumunu (test case) tanımlar. 
-İçerisine testin neyi test ettiğini belirten bir başlık ve test kodlarını içeren bir fonksiyon alır. 
-Her it bloğu, Cypress'in çalıştıracağı bağımsız bir testtir.
-Kullanımı: it içinde yazılan kod, belirli bir davranışı veya durumu test etmek için kullanılır.
+Amaci: it bloğu, tek bir test durumunu (test case) tanimlar. 
+İçerisine testin neyi test ettiğini belirten bir başlik ve test kodlarini içeren bir fonksiyon alir. 
+Her it bloğu, Cypress'in çaliştiracaği bağimsiz bir testtir.
+Kullanimi: it içinde yazilan kod, belirli bir davranişi veya durumu test etmek için kullanilir.
 
-it("Kullanıcı doğru bilgilerle giriş yapabiliyor mu?", () => {
-  // Giriş işlemiyle ilgili test kodları burada olacak 
+it("Kullanici doğru bilgilerle giriş yapabiliyor mu?", () => {
+  // Giriş işlemiyle ilgili test kodlari burada olacak
 });
 
 */

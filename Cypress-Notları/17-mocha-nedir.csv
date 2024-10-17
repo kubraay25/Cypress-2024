@@ -2,30 +2,36 @@
 
 Mocha, JavaScript uygulamalarn test etmek için kullanlan popüler bir test framework'üdür. Genellikle Node.js ve tarayc tabanl uygulamalarda kullanlmak üzere tasarlanmştr. İşte Mocha hakknda bilmeniz gereken baz temel noktalar:
 
-### 1. **Test Çerçevesi**
-   - Mocha, testleri yazmak ve çalştrmak için bir yap sağlar. Kullanclarn test senaryolarn düzenlemesine ve test sonuçlarn görmesine olanak tanr.
+ 1. Test Çerçevesi
+   - Mocha, testleri yazmak ve çalştrmak için bir yap sağlar. 
+     Kullanclarn test senaryolarn düzenlemesine ve test sonuçlarn görmesine olanak tanr.
    - Testlerinizi `describe` ve `it` bloklar ile organize etmenizi sağlar.
 
-### 2. **Asenkron Destek**
-   - Mocha, asenkron test yazmayi destekler. Bu, asenkron işlemlerin (örneğin, API istekleri, veritaban sorgular) test edilmesini kolaylaştrr.
+ 2. Asenkron Destek
+   - Mocha, asenkron test yazmayi destekler. Bu, asenkron işlemlerin (örneğin, API istekleri, veritaban sorgular) 
+     test edilmesini kolaylaştrr.
    - Callback fonksiyonlar veya Promise'ler kullanarak asenkron test yazabilirsiniz.
 
-### 3. **Çeşitli Raporlama Seçenekleri**
-   - Mocha, farkl raporlama biçimlerini destekler. Başarl ve başarsz testler hakknda bilgi veren raporlar oluşturabilir.
+ 3. Çeşitli Raporlama Seçenekleri
+   - Mocha, farkl raporlama biçimlerini destekler. Başarl ve başarsz testler hakknda 
+     bilgi veren raporlar oluşturabilir.
    - Komut satrnda farkl raporlar almak için raporlama seçeneklerini değiştirebilirsiniz.
 
-### 4. **Yaplandrlabilir**
-   - Mocha, yaplandrlabilir ve genişletilebilir bir yapya sahiptir. Kullanclar, özel raporlar ve asserler (doğrulama araçlar) ekleyebilir.
-   - Ekstra eklentilerle (örneğin, `chai` gibi assertion library'ler) birlikte kullanlarak daha güçlü testler yazmak mümkündür.
+ 4. Yaplandrlabilir
+   - Mocha, yaplandrlabilir ve genişletilebilir bir yapya sahiptir. 
+     Kullanclar, özel raporlar ve asserler (doğrulama araçlar) ekleyebilir.
+   - Ekstra eklentilerle (örneğin, `chai` gibi assertion library'ler) birlikte kullanlarak 
+     daha güçlü testler yazmak mümkündür.
 
-### 5. **Tarayc ve Node.js Desteği**
+ 5. Tarayc ve Node.js Desteği
    - Mocha, hem Node.js uygulamalar hem de tarayc tabanl uygulamalar için test yazmna olanak tanr.
    - Taraycda çalştrmak için uygun bir yaplandrma ile birlikte kullanlabilir.
 
-### 6. **Kullanm Kolaylğ**
-   - Mocha'nn API'si, JavaScript geliştiricileri için oldukça sezgisel ve kullanm kolaydr. Test yazma sürecini sadeleştirir ve geliştiricilerin test senaryolarn hzl bir şekilde oluşturmalarna yardmc olur.
+ 6. Kullanm Kolaylğ
+   - Mocha'nn API'si, JavaScript geliştiricileri için oldukça sezgisel ve kullanm kolaydr. 
+     Test yazma sürecini sadeleştirir ve geliştiricilerin test senaryolarn hzli bir şekilde oluşturmalarna yardmc olur.
 
-### Örnek Kullanm
+ Örnek Kullanm
 Aşağda Mocha ile basit bir test yazma örneği verilmiştir:
 
 ```javascript
@@ -44,5 +50,8 @@ describe('Matematiksel İşlemler', () => {
 });
 ```
 
-### Sonuç
-Mocha, JavaScript projelerinde test yazma ve yönetme sürecini kolaylaştran güçlü bir araçtr. Cypress gibi baz test çerçeveleri Mocha üzerine inşa edilmiştir, bu da Mocha'nn esnekliğini ve kullanm kolaylğn artrr. Geliştiriciler, uygulama kalitesini artrmak için test yazma süreçlerinde Mocha'y sklkla tercih ederler.
+ Sonuç
+Mocha, JavaScript projelerinde test yazma ve yönetme sürecini kolaylaştran güçlü bir araçtr. 
+Cypress gibi baz test çerçeveleri Mocha üzerine inşa edilmiştir, bu da Mocha'nn esnekliğini 
+ve kullanm kolaylğn artrr. Geliştiriciler, uygulama kalitesini artrmak için test yazma 
+süreçlerinde Mocha'y sklkla tercih ederler.
