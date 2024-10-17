@@ -1,0 +1,51 @@
+
+
+tsconfig.json dosyasi
+
+==> TypeScript projeleri için konfigürasyonlari belirleyen bir dosyadir. 
+Cypress gibi test çerçevelerinde, TypeScript desteği sağlamak ve akilli kod yazma desteği (intellisense)
+kullanmak için bu dosya önemlidir. İşte bu dosyanin sağladiği bazi avantajlar:
+
+==> "cypress" klasöründe tsconfig.json dosyasini oluştururuz
+
+==> bu bir akilli kod yazma (intellisense) destegidir
+
+
+1. IntelliSense Desteği:
+IntelliSense, kod yazarken otomatik tamamlama, fonksiyon tanimlari ve hata ayiklama gibi özellikleri sunar. 
+Bu sayede, Cypress testlerini yazarken TypeScript’in güçlü tip kontrolü ve fonksiyon önerileri ile 
+daha hizli ve doğru kod yazabilirsiniz.
+
+
+2. Tip Güvenliği:
+TypeScript, JavaScript'in tip kontrolü eklenmiş bir versiyonudur. Bu sayede, testlerde 
+yazilan kodun doğru türde parametreler alip almadiğini kontrol eder ve hata yapma olasiliğini azaltir.
+
+
+3. Proje Yapilandirmasi:
+tsconfig.json, TypeScript derleyicisinin nasil çalişacağini tanimlar. Örneğin, 
+Cypress testlerinde kullanilan modüllerin nasil yüklenmesi gerektiğini, 
+hangi dosyalarin dahil edilip edilmeyeceğini ve derleme hedeflerini belirler.
+
+
+Cypress Klasöründe tsconfig.json Dosyasinin Rolü
+Cypress, TypeScript ile uyumlu olduğundan, testlerin TypeScript ile yazilmasi mümkündür. 
+Cypress klasörüne bir tsconfig.json dosyasi ekleyerek, TypeScript desteğini etkinleştirip, test kodlarinda IntelliSense, tip kontrolü gibi özelliklerden yararlanabilirsiniz.
+Örnek tsconfig.json Dosyasi (Cypress için)
+Aşağida, Cypress ile TypeScript kullanimi için basit bir tsconfig.json örneği bulabilirsiniz:
+
+json
+
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "baseUrl": "../node_modules",
+      "noEmit": true,
+      "types": ["cypress"]
+    },
+    "include": ["**/*.*"]
+  }  
+Bu dosya, Cypress'in test dosyalarinda TypeScript kodu çaliştirmasini sağlar. i
+Ayrica, Cypress'in kendi tip tanimlarini da projeye dahil eder.
+
+Bu bilgilerle TypeScript’in sağladiği kolayliklari Cypress projelerinde nasil kullanabileceğinizi öğrenebilirsiniz.

@@ -1,0 +1,15 @@
+
+
+
+
+Kisa yollar ile yogun kullanilan cypress komutlarini eklemeyi saglar
+
+dsb => discription bloğu
+
+it => it bloğu
+
+cyvt => cy.visit("")
+
+cygt => cy.get("")
+
+cyck => cy.get("").click()
