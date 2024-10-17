@@ -1,0 +1,48 @@
+Chai, JavaScript uygulamaları için kullanılan popüler bir assertion (doğrulama) kütüphanesidir. Genellikle test framework'leriyle (örneğin Mocha) birlikte kullanılır. Chai, test yazarken daha okunabilir ve sezgisel bir şekilde beklenen sonuçları ifade etmeye yardımcı olur. İşte Chai hakkında bilmeniz gereken bazı temel noktalar:
+
+### 1. **Assertion Stilleri**
+Chai, farklı assertion stilleri sunar, bu da geliştiricilerin beklenen sonuçlarını ifade etme şekillerinde esneklik sağlar. Temel stiller şunlardır:
+
+- **Bdd (Behavior-Driven Development) Stili:** `expect` ve `should` kullanarak yazılır.
+  - **Örnek:** 
+    ```javascript
+    expect(sayi).to.equal(5);
+    sayi.should.be.a('number');
+    ```
+  
+- **Tdd (Test-Driven Development) Stili:** `assert` kullanarak yazılır.
+  - **Örnek:** 
+    ```javascript
+    assert.equal(sayi, 5);
+    assert.typeOf(sayi, 'number');
+    ```
+
+### 2. **Zengin Eşleşme Seçenekleri**
+Chai, geniş bir eşleşme (matching) seçenekleri yelpazesi sunar. Örneğin, bir değerin belirli bir türde olup olmadığını kontrol edebilir, dizinin içeriğini doğrulayabilir veya belirli bir hata durumunun meydana gelip gelmediğini test edebilirsiniz.
+
+### 3. **Eklentiler**
+Chai, işlevselliğini genişletmek için çeşitli eklentilerle birlikte kullanılabilir. Örneğin:
+- **chai-as-promised:** Asenkron testler için promise'lerin doğrulanmasını sağlar.
+- **chai-http:** HTTP istekleri için assertion'lar sağlar, bu da API testleri için kullanışlıdır.
+
+### 4. **Kullanım Kolaylığı**
+Chai'nin API'si, sezgisel ve kullanımı kolaydır. Test yazarken daha az kod yazarak daha anlamlı ifadeler kullanmanızı sağlar.
+
+### Örnek Kullanım
+Aşağıda Chai ile bir test yazımına örnek verilmiştir:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+
+describe('Dizi Testi', () => {
+  it('Dizinin içeriği kontrol ediliyor', () => {
+    const dizi = [1, 2, 3];
+    expect(dizi).to.include(2); // 2'nin dizide olup olmadığını kontrol eder.
+    expect(dizi).to.have.lengthOf(3); // Dizinin uzunluğunu kontrol eder.
+  });
+});
+```
+
+### Sonuç
+Chai, JavaScript uygulamalarını test etmek için güçlü ve esnek bir assertion kütüphanesidir. Özellikle Mocha gibi test framework'leriyle birlikte kullanıldığında, geliştiricilere daha okunabilir ve sezgisel test yazma imkanı sunar. Chai sayesinde test senaryolarınızı daha iyi ifade edebilir ve kodunuzun kalitesini artırabilirsiniz.

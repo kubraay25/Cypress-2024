@@ -1,15 +1,3 @@
-describe("İlk Testim", () => {
-  it("true,true ile esit mi!", () => {
-    expect(true).to.equal(true);
-  });
-
-  it("true,terue ile esit mi!", () => {
-    //intellisense
-    cy.get("").click();
-  });
-});
-
-
 /*
 Cypress, Mocha adlı bir test framework'ü üzerine kuruludur ve bu framework'ün temel yapı taşları 
 olan describe ve it bloklarını kullanır.
@@ -34,7 +22,7 @@ Her it bloğu, Cypress'in çalıştıracağı bağımsız bir testtir.
 Kullanımı: it içinde yazılan kod, belirli bir davranışı veya durumu test etmek için kullanılır.
 
 it("Kullanıcı doğru bilgilerle giriş yapabiliyor mu?", () => {
-  // Giriş işlemiyle ilgili test kodları burada olacak
+  // Giriş işlemiyle ilgili test kodları burada olacak 
 });
 
 */
