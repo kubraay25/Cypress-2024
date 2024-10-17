@@ -1,0 +1,13 @@
+Test açaliştirma Komutlari
+
+npx cypress open ==> Test Runner'i çaliştirir
+
+npx cypress run ==> e2e klasorundeki tum testleri calistirir
+
+npx --spec "kalsor yolu" ==> klasördeki tüm dosyalari terminalde calistirir
+
+npx --spec "dosya yolu" ==> dosyayi terminalde electron browser ile koşulabilir
+
+npx --browser chrome ==> testleri terminalde chrome browser ile koşulabilir
+
+npx --headed --browser chrome ==> testleri browser açarak chrome browser ile koşar 
