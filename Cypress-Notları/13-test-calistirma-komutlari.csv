@@ -4,10 +4,14 @@ npx cypress open ==> Test Runner'i çaliştirir
 
 npx cypress run ==> e2e klasorundeki tum testleri calistirir
 
-npx --spec "kalsor yolu" ==> klasördeki tüm dosyalari terminalde calistirir
+npx cypress run --spec "kalsor yolu" ==> klasördeki tüm dosyalari electron yardimi ile terminalde calistirir (Copy Relative Path)
 
-npx --spec "dosya yolu" ==> dosyayi terminalde electron browser ile koşulabilir
+npx cypress run --spec "dosya yolu" ==> dosyayi terminalde electron browser ile koşar
 
-npx --browser chrome ==> testleri terminalde chrome browser ile koşulabilir
+npx cypress run --browser chrome ==> testleri terminalde chrome browser ile koşulabilir
+yukardaki komut ile klasör ya da dosyayida chrome browaeri üzrinden calistirabiliriz aşağidaki gibi
+npx cypress run --browser chrome --spec "dosya yolu"       şekilnde
 
-npx --headed --browser chrome ==> testleri browser açarak chrome browser ile koşar 
+
+npx cypress run --headed --browser chrome ==> testleri browser açarak chrome browser ile koşar 
+terminalden otomatik olarak test browseri acilir
