@@ -3,5 +3,5 @@
 npx cypress open komutu, 
 
 
-Cypress test aracini başlatmak ve Cypress test arayüzünü açmak için kullanilir. 
-Bu komut, projenizde Cypress kuruluysa doğrudan testlerinizi çaliştirmaniza ve yönetmenize olanak tanir.
+Cypress test aracini baslatmak ve Cypress test arayuzunu acmak icin kullanilir. 
+Bu komut, projenizde Cypress kuruluysa dogrudan testlerinizi calistirmaniza ve yonetmenize olanak tanir.

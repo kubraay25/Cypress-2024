@@ -1,65 +1,65 @@
 PACKAGE.JSON DOSYASI EN ISE YARAR
 
--->`package.json`, JavaScript tabanli projelerde (özellikle Node.js uygulamalarinda) kullanilan bir dosyadir ve 
-projenizin yapilandirma bilgilerini, bağimliliklarini ve diğer önemli verilerini içerir. 
+-->`package.json`, JavaScript tabanli projelerde (ozellikle Node.js uygulamalarinda) kullanilan bir dosyadir ve 
+projenizin yapilandirma bilgilerini, bagimliliklarini ve diger onemli verilerini icerir. 
 
  1.--> Nedir?:
- `package.json`, JSON formatinda yazilmiş bir dosyadir ve projenizin kök dizininde bulunur. 
- Projeyi yöneten ve yapilandiran temel bilgiler içerir.
+ `package.json`, JSON formatinda yazilmis bir dosyadir ve projenizin kok dizininde bulunur. 
+ Projeyi yoneten ve yapilandiran temel bilgiler icerir.
  Seleniumda ki pom.exe gibidir
 
- 2.--> Ne İşe Yarar?
-Proje Bilgileri: Projenizin adi, versiyonu, açiklamasi, yazar bilgileri gibi temel bilgileri içerir.
+ 2.--> Ne Ise Yarar?
+Proje Bilgileri: Projenizin adi, versiyonu, aciklamasi, yazar bilgileri gibi temel bilgileri icerir.
 
-Bağimliliklar: Projeye dahil edilen kütüphaneler ve modüller hakkinda bilgi verir. 
-Bu kütüphaneler `dependencies` ve `devDependencies` alanlarinda belirtilir.
+Bagimliliklar: Projeye dahil edilen kutuphaneler ve moduller hakkinda bilgi verir. 
+Bu kutuphaneler `dependencies` ve `devDependencies` alanlarinda belirtilir.
 
-Scripting: Proje için özel komutlar tanimlamaniza olanak tanir. 
-Örneğin, test, geliştirme sunucusu başlatma gibi işlemler için `scripts` bölümünde tanimlamalar yapabilirsiniz.
+Scripting: Proje icin ozel komutlar tanimlamaniza olanak tanir. 
+ornegin, test, gelistirme sunucusu baslatma gibi islemler icin `scripts` bolumunde tanimlamalar yapabilirsiniz.
 
-Versiyon Yönetimi: Projenizin sürümünü belirleyerek, belirli bir sürüm üzerinde çalişmaniza olanak tanir.
+Versiyon Yonetimi: Projenizin surumunu belirleyerek, belirli bir surum uzerinde calismaniza olanak tanir.
 
  3.--> Neler Yapabilirim?
  
 Proje Bilgilerini Tanimlamak: `name`, `version`, `description`, `author`, 
 `license` gibi alanlari doldurarak projenizi tanimlayabilirsiniz.
 
-Bağimliliklari Yönetmek:
-  - Yeni bir bağimlilik eklemek için terminalde `npm install <paket-adi>` komutunu kullanabilirsiniz. 
+Bagimliliklari Yonetmek:
+  - Yeni bir bagimlilik eklemek icin terminalde `npm install <paket-adi>` komutunu kullanabilirsiniz. 
   Bu, `package.json` dosyanizin `dependencies` veya `devDependencies` kismina otomatik olarak eklenir.
-  - Örneğin:
+  - ornegin:
     ```bash
     npm install express
     ```
 
-Script Tanimlamak: `scripts` bölümünde komutlar tanimlayarak, 
-belirli görevleri kolayca çaliştirabilirsiniz. Örneğin:
+Script Tanimlamak: `scripts` bolumunde komutlar tanimlayarak, 
+belirli gorevleri kolayca calistirabilirsiniz. ornegin:
     ```json
     "scripts": {
       "start": "node app.js",
       "test": "jest"
     }
     ```
-  - Bu tanimlamalarla terminalde `npm start` veya `npm test` komutlariyla ilgili script'leri çaliştirabilirsiniz.
+  - Bu tanimlamalarla terminalde `npm start` veya `npm test` komutlariyla ilgili script'leri calistirabilirsiniz.
 
-Bağimliliklari Güncellemek: Mevcut bağimliliklari güncelleyebilir ve sürüm kontrolü yapabilirsiniz. 
-Örneğin, belirli bir paketi güncellemek için:
+Bagimliliklari Guncellemek: Mevcut bagimliliklari guncelleyebilir ve surum kontrolu yapabilirsiniz. 
+ornegin, belirli bir paketi guncellemek icin:
     ```bash
     npm update <paket-adi>
     ```
 
- 4.--> Neden Yükleriz? Amaci Nedir?
+ 4.--> Neden Yukleriz? Amaci Nedir?
  
-Projenin Yönetimini Kolaylaştirmak: Projenizdeki bağimliliklari ve yapilandirmalari merkezi bir dosyada toplamak, 
-yönetimi kolaylaştirir.
+Projenin Yonetimini Kolaylastirmak: Projenizdeki bagimliliklari ve yapilandirmalari merkezi bir dosyada toplamak, 
+yonetimi kolaylastirir.
 
-Ekip Çalişmasi: Projeye katkida bulunan diğer geliştiricilerin bağimliliklari kolayca yüklemelerini sağlar. 
-Projeyi klonladiktan sonra `npm install` komutunu çaliştirarak `package.json` dosyasindaki tüm bağimliliklari yükleyebilirler.
+Ekip Calismasi: Projeye katkida bulunan diger gelistiricilerin bagimliliklari kolayca yuklemelerini saglar. 
+Projeyi klonladiktan sonra `npm install` komutunu calistirarak `package.json` dosyasindaki tum bagimliliklari yukleyebilirler.
  
-Sürüm Kontrolü: Projenin sürümünü ve bağimliliklarinin sürümlerini kontrol ederek, 
-uyumlu bir çalişma ortami sağlar.
+Surum Kontrolu: Projenin surumunu ve bagimliliklarinin surumlerini kontrol ederek, 
+uyumlu bir calisma ortami saglar.
 
- Örnek `package.json` Dosyasi:
+ ornek `package.json` Dosyasi:
 ```json
 {
   "name": "my-awesome-project",
@@ -76,9 +76,9 @@ uyumlu bir çalişma ortami sağlar.
   "devDependencies": {
     "jest": "^26.6.0"
   },
-  "author": "Kübra Aydoğdu",
+  "author": "Kubra Aydogdu",
   "license": "MIT"
 }
 ```
 
-Bu bilgiler, `package.json` dosyasinin projelerdeki rolünü ve nasil kullanilacağini anlamaniza yardimci olacaktir. 
+Bu bilgiler, `package.json` dosyasinin projelerdeki rolunu ve nasil kullanilacagini anlamaniza yardimci olacaktir. 

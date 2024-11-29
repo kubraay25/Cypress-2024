@@ -6,7 +6,7 @@ cypress.config.js, Cypress'in temel yapilandirma dosyasidir.
 Cypress testlerini nasil çaliştiracağinizi ve ayarlarini bu dosyada tanimlarsiniz. 
 Bu dosya, testlerin nasil çalişacağini kontrol eden ayarlari içerir.
 
-
+ç
 
 
 2.Ne İşe Yarar? 

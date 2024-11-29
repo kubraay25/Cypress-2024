@@ -1,32 +1,32 @@
 Cypress Nedir?
 --> Javascript tabanli bir test aracidir sadece javasicript kullanilir
---> Uçtan uca test (E2E Test) odaklidir
---> Web uygulamalarinin test edilmesi için kullanilir
---> Node.js platformnda çalişir
---> Test senaryolari koşulabilir ve hata ayiklamasi yapilabilir
---> Framework kurmak için manuel olarak paket indirmenize gerek yoktur
---> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
-açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
-JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir
+--> Uctan uca test (E2E Test) odaklidir
+--> Web uygulamalarinin test edilmesi icin kullanilir
+--> Node.js platformnda calisir
+--> Test senaryolari kosulabilir ve hata ayiklamasi yapilabilir
+--> Framework kurmak icin manuel olarak paket indirmenize gerek yoktur
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) calismasina olanak taniyan, 
+acik kaynakli ve capraz platform bir calisma ortamidir. Tarayici icinde calismak yerine, 
+JavaScript'in sunucuda calismasini saglayarak, arka uc (backend) gelistirme islemlerinde de kullanilabilmesine imkan tanir
 
 Web tabanli uygulama nedir?
---> Web uygulamasi, internet üzerinden bir tarayici araciliğiyla erişilebilen ve 
-kullanicinin etkileşimde bulunduğu bir yazilim uygulamasidir. Geleneksel masaüstü uygulamalarinin aksine, 
-web uygulamalari yüklemeye gerek kalmadan doğrudan web tarayicisi üzerinden çalişir ve 
-genellikle bir sunucuya bağli olarak dinamik içerik sunar.
+--> Web uygulamasi, internet uzerinden bir tarayici araciligiyla erisilebilen ve 
+kullanicinin etkilesimde bulundugu bir yazilim uygulamasidir. Geleneksel masaustu uygulamalarinin aksine, 
+web uygulamalari yuklemeye gerek kalmadan dogrudan web tarayicisi uzerinden calisir ve 
+genellikle bir sunucuya bagli olarak dinamik icerik sunar.
 
 Node.js nedir?
---> Node.js, JavaScript'in sunucu tarafinda (server-side) çalişmasina olanak taniyan, 
-açik kaynakli ve çapraz platform bir çalişma ortamidir. Tarayici içinde çalişmak yerine, 
-JavaScript'in sunucuda çalişmasini sağlayarak, arka uç (backend) geliştirme işlemlerinde de kullanilabilmesine imkan tanir.
---> Node.js sayesinde testlerimiz çok hizli çalişir
---> Node.js bir kütüphanedir ve buradaki kütüphaneleri uygulamalarimiza kolaylikla enjekte edebiliyoruz
---> Node.js, devasa bir paket yönetim sistemi olan npm ile birlikte gelir. NPM, 
-geliştiricilerin projelerinde kolayca kullanabilecekleri binlerce kütüphaneye ve modüle erişim sağlar.
+--> Node.js, JavaScript'in sunucu tarafinda (server-side) calismasina olanak taniyan, 
+acik kaynakli ve capraz platform bir calisma ortamidir. Tarayici icinde calismak yerine, 
+JavaScript'in sunucuda calismasini saglayarak, arka uc (backend) gelistirme islemlerinde de kullanilabilmesine imkan tanir.
+--> Node.js sayesinde testlerimiz cok hizli calisir
+--> Node.js bir kutuphanedir ve buradaki kutuphaneleri uygulamalarimiza kolaylikla enjekte edebiliyoruz
+--> Node.js, devasa bir paket yonetim sistemi olan npm ile birlikte gelir. NPM, 
+gelistiricilerin projelerinde kolayca kullanabilecekleri binlerce kutuphaneye ve module erisim saglar.
 
 Cypress'in Eksileri
 --> Mobil otomasyonu desteklenmez
---> Iframe ile iyi anlaşamaz
+--> Iframe ile iyi anlasamaz
 --> Tek URL ve tek sekme kullanilir
 
 
